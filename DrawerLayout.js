@@ -228,13 +228,7 @@ export default class DrawerLayout extends Component<PropType, StateType> {
   };
 
   _onTapHandlerStateChange = ({ nativeEvent }) => {
-    if (
-      this._drawerShown &&
-      nativeEvent.oldState === State.ACTIVE &&
-      this.props.drawerLockMode !== 'locked-open'
-    ) {
-      this.closeDrawer();
-    }
+	  // nothing
   };
 
   _handleRelease = nativeEvent => {
